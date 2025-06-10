@@ -1,0 +1,42 @@
+{
+  "name": "lift-together",
+  "version": "1.0.0",
+  "description": "リフト相乗り推進サイト - スキー場への移動とリフト券をシェアするプラットフォーム",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:html && npm run build:js && npm run build:images",
+    "build:css": "sass src/scss/main.scss dist/css/style.css --style compressed",
+    "build:html": "cp src/*.html dist/",
+    "build:js": "cp -r src/js dist/",
+    "build:images": "cp -r src/images dist/",
+    "watch": "npm run watch:css & npm run watch:html",
+    "watch:css": "sass --watch src/scss/main.scss:dist/css/style.css",
+    "watch:html": "chokidar 'src/*.html' -c 'npm run build:html'",
+    "serve": "live-server dist --port=3000",
+    "dev": "npm run build && npm run watch & npm run serve",
+    "deploy": "npm run build && gh-pages -d dist",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ski",
+    "snowboard",
+    "carpool",
+    "lift-ticket",
+    "sharing",
+    "winter-sports",
+    "japan"
+  ],
+  "author": "Lift Together Team",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "chokidar-cli": "^3.0.0",
+    "live-server": "^1.2.2",
+    "gh-pages": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yousan/lift-together.git"
+  },
+  "homepage": "https://yousan.github.io/lift-together"
+} 
