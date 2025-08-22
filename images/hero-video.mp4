@@ -1,0 +1,10 @@
+# Hero Video Placeholder
+# 実際の実装では、スキー場でのリフト乗車シーンや雪山の美しい風景の動画を配置
+# 推奨仕様:
+# - 解像度: 1920x1080 (Full HD)
+# - 長さ: 10-15秒のループ
+# - フォーマット: MP4 (H.264)
+# - サイズ: 5MB以下
+# - 内容: スキー・スノーボード愛好者がリフトに乗って楽しそうにしている様子
+
+echo "Hero video placeholder - Replace with actual video file" 

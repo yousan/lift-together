@@ -1,0 +1,5 @@
+<!-- グループ写真2のプレースホルダー -->
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f7931e"/>
+  <text x="150" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">楽しい時間</text>
+</svg> 

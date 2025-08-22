@@ -1,0 +1,6 @@
+<!-- ステップ3の画像プレースホルダー -->
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#48bb78"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold">一緒に楽しむ</text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">Enjoy Together</text>
+</svg> 
