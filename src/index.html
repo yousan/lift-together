@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lift Together - リフト相乗り推進サイト</title>
-    <meta name="description" content="スキー場への移動とリフト券をシェアして、コストを削減し環境にも優しいウィンタースポーツを楽しもう！">
-    <meta name="keywords" content="スキー,スノーボード,相乗り,リフト券,シェア,ウィンタースポーツ">
+    <title>Lift Together - リフト相乗り推進プラットフォーム</title>
+    <meta name="description" content="スキー場でリフトの座席が満席になるように、その場にいる人たちと協力して一緒にリフトに乗ることを促すプラットフォームです。リフトの渋滞緩和に貢献し、皆が効率的に雪山を楽しむことを目指します。">
+    <meta name="keywords" content="スキー,スノーボード,リフト相乗り,待ち時間短縮,混雑緩和,満席乗車,マナー">
     
     <!-- OGP設定 -->
-    <meta property="og:title" content="Lift Together - リフト相乗り推進サイト">
-    <meta property="og:description" content="スキー場への移動とリフト券をシェアして、コストを削減し環境にも優しいウィンタースポーツを楽しもう！">
+    <meta property="og:title" content="Lift Together - リフト相乗り推進プラットフォーム">
+    <meta property="og:description" content="スキー場でリフトの座席が満席になるように、その場にいる人たちと協力して一緒にリフトに乗ることを促すプラットフォームです。リフトの渋滞緩和に貢献し、皆が効率的に雪山を楽しむことを目指します。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yousan.github.io/lift-together">
     <meta property="og:image" content="https://yousan.github.io/lift-together/images/og-image.jpg">
@@ -17,8 +17,8 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lift Together - リフト相乗り推進サイト">
-    <meta name="twitter:description" content="スキー場への移動とリフト券をシェアして、コストを削減し環境にも優しいウィンタースポーツを楽しもう！">
+    <meta name="twitter:title" content="Lift Together - リフト相乗り推進プラットフォーム">
+    <meta name="twitter:description" content="スキー場でリフトの座席が満席になるように、その場にいる人たちと協力して一緒にリフトに乗ることを促すプラットフォームです。リフトの渋滞緩和に貢献し、皆が効率的に雪山を楽しむことを目指します。">
     <meta name="twitter:image" content="https://yousan.github.io/lift-together/images/og-image.jpg">
     
     <link rel="stylesheet" href="css/style.css">
@@ -34,10 +34,13 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#about" class="header__nav-link">サービスについて</a></li>
-                    <li class="header__nav-item"><a href="#how-it-works" class="header__nav-link">使い方</a></li>
-                    <li class="header__nav-item"><a href="#benefits" class="header__nav-link">メリット</a></li>
-                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">お問い合わせ</a></li>
+                    <li class="header__nav-item"><a href="#benefits" class="header__nav-link">ベネフィット</a></li>
+                    <li class="header__nav-item"><a href="#adventure" class="header__nav-link">アドベンチャー</a></li>
+                    <li class="header__nav-item"><a href="#community" class="header__nav-link">コミュニティ</a></li>
+                    <li class="header__nav-item"><a href="#experience" class="header__nav-link">体験談</a></li>
+                    <li class="header__nav-item"><a href="#join" class="header__nav-link">参加する</a></li>
+                    <li class="header__nav-item"><a href="#sticker" class="header__nav-link">ステッカー</a></li>
+                    <li class="header__nav-item"><a href="#faq" class="header__nav-link">FAQ</a></li>
                 </ul>
             </nav>
             <button class="header__menu-toggle" aria-label="メニューを開く">
@@ -48,105 +51,294 @@
         </div>
     </header>
 
-    <!-- メインビジュアル -->
+    <!-- ヒーローセクション -->
     <section class="hero">
-        <div class="hero__container">
-            <div class="hero__content">
-                <h2 class="hero__title">一緒にリフトに乗ろう！</h2>
-                <p class="hero__subtitle">スキー場への移動とリフト券をシェアして<br>コストを削減し、環境にも優しく</p>
+        <div class="hero__video-container">
+            <video class="hero__video" autoplay muted loop playsinline poster="images/hero-image.jpg">
+                <source src="images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero__video-overlay"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <h2 class="hero__title">
+                    <span class="hero__title-line">Lift Together — リフト相乗りで</span>
+                    <span class="hero__title-line hero__title-line--accent">もっと速く、もっと楽しく</span>
+                </h2>
+                <p class="hero__subtitle">
+                    待ち時間を減らし、満席乗車を当たり前に。<br>
+                    その一声が、ゲレンデ全体をスムーズにします。
+                </p>
                 <div class="hero__buttons">
-                    <button class="hero__cta-button hero__cta-button--primary">相乗り募集を見る</button>
-                    <button class="hero__cta-button hero__cta-button--secondary">相乗りを募集する</button>
+                    <button class="hero__cta-button hero__cta-button--primary">
+                        <span>相乗りに参加する</span>
+                        <svg class="hero__cta-icon" viewBox="0 0 24 24">
+                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="hero__cta-button hero__cta-button--secondary">
+                        <span>マナーと声かけを見る</span>
+                    </button>
                 </div>
-            </div>
-            <div class="hero__image">
-                <img src="images/hero-image.jpg" alt="スキー場でのリフト" class="hero__image-img">
             </div>
         </div>
         <div class="hero__scroll-indicator">
-            <span class="hero__scroll-text">Scroll</span>
+            <span class="hero__scroll-text">Scroll for Adventure</span>
             <div class="hero__scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- サービス概要 -->
-    <section class="about" id="about">
-        <div class="about__container">
-            <h2 class="about__title">Lift Togetherとは</h2>
-            <p class="about__description">
-                スキー・スノーボード愛好者同士が移動手段とリフト券をシェアすることで、
-                コストを削減し、環境負荷を軽減しながら、新しい仲間との出会いを創出するプラットフォームです。
-            </p>
-            <div class="about__features">
-                <div class="about__feature">
-                    <div class="about__feature-icon">
-                        <img src="images/icon-cost.svg" alt="コスト削減">
-                    </div>
-                    <h3 class="about__feature-title">コスト削減</h3>
-                    <p class="about__feature-text">交通費とリフト券代を分割して、お得にウィンタースポーツを楽しめます</p>
-                </div>
-                <div class="about__feature">
-                    <div class="about__feature-icon">
-                        <img src="images/icon-eco.svg" alt="環境保護">
-                    </div>
-                    <h3 class="about__feature-title">環境保護</h3>
-                    <p class="about__feature-text">車両の相乗りでCO2排出量を削減し、地球環境に貢献します</p>
-                </div>
-                <div class="about__feature">
-                    <div class="about__feature-icon">
-                        <img src="images/icon-community.svg" alt="コミュニティ">
-                    </div>
-                    <h3 class="about__feature-title">コミュニティ</h3>
-                    <p class="about__feature-text">同じ趣味を持つ仲間との新しい出会いと交流を楽しめます</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 使い方 -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="how-it-works__container">
-            <h2 class="how-it-works__title">使い方</h2>
-            <div class="how-it-works__steps">
-                <div class="how-it-works__step">
-                    <div class="how-it-works__step-number">1</div>
-                    <h3 class="how-it-works__step-title">募集を探す・投稿する</h3>
-                    <p class="how-it-works__step-text">行きたいスキー場や日程で相乗り募集を検索、または自分で募集を投稿</p>
-                </div>
-                <div class="how-it-works__step">
-                    <div class="how-it-works__step-number">2</div>
-                    <h3 class="how-it-works__step-title">メンバーとマッチング</h3>
-                    <p class="how-it-works__step-text">参加希望者と連絡を取り、詳細を調整してグループを結成</p>
-                </div>
-                <div class="how-it-works__step">
-                    <div class="how-it-works__step-number">3</div>
-                    <h3 class="how-it-works__step-title">一緒にスキー場へ</h3>
-                    <p class="how-it-works__step-text">待ち合わせ場所で合流し、みんなでスキー場へ向かって楽しい一日を過ごす</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- メリット -->
+    <!-- ベネフィットセクション -->
     <section class="benefits" id="benefits">
         <div class="benefits__container">
-            <h2 class="benefits__title">Lift Togetherのメリット</h2>
             <div class="benefits__grid">
                 <div class="benefits__item">
-                    <h3 class="benefits__item-title">最大50%のコスト削減</h3>
-                    <p class="benefits__item-text">交通費とリフト券代をシェアすることで、大幅な節約が可能です</p>
+                    <img class="benefits__icon" src="images/icons/icon-wait-time.svg" alt="待ち時間短縮" loading="lazy">
+                    <h3 class="benefits__title">待ち時間短縮</h3>
+                    <p class="benefits__text">その場の相乗りで空席をなくし、リフト回転を高める</p>
                 </div>
                 <div class="benefits__item">
-                    <h3 class="benefits__item-title">環境への貢献</h3>
-                    <p class="benefits__item-text">1台の車で複数人が移動することで、CO2排出量を削減できます</p>
+                    <img class="benefits__icon" src="images/icons/icon-ride-time.svg" alt="滑走時間の最大化" loading="lazy">
+                    <h3 class="benefits__title">滑走時間の最大化</h3>
+                    <p class="benefits__text">待つ時間を減らして、滑る時間を増やす</p>
                 </div>
                 <div class="benefits__item">
-                    <h3 class="benefits__item-title">新しい出会い</h3>
-                    <p class="benefits__item-text">同じ趣味を持つ仲間との出会いで、スキーライフがより充実します</p>
+                    <img class="benefits__icon" src="images/icons/icon-queue-flow.svg" alt="スムーズな列運用" loading="lazy">
+                    <h3 class="benefits__title">スムーズな列運用</h3>
+                    <p class="benefits__text">合図と声かけで満席乗車が当たり前に</p>
                 </div>
-                <div class="benefits__item">
-                    <h3 class="benefits__item-title">安心・安全</h3>
-                    <p class="benefits__item-text">ユーザー認証と評価システムで、安心して利用できます</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- アドベンチャーセクション -->
+    <section class="adventure" id="adventure">
+        <div class="adventure__container">
+            <div class="adventure__header">
+                <h2 class="adventure__title">雪山での冒険</h2>
+                <p class="adventure__subtitle">仲間と一緒だから、もっと楽しい</p>
+            </div>
+            <div class="adventure__grid">
+                <div class="adventure__card">
+                    <div class="adventure__card-image">
+                        <img src="images/1_powder.png" alt="パウダースノー" loading="lazy">
+                        <div class="adventure__card-overlay">
+                            <h3 class="adventure__card-title">パウダースノー</h3>
+                            <p class="adventure__card-text">最高の雪質で滑る爽快感</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventure__card">
+                    <div class="adventure__card-image">
+                        <img src="images/2_lift.png" alt="リフトライド" loading="lazy">
+                        <div class="adventure__card-overlay">
+                            <h3 class="adventure__card-title">リフトライド</h3>
+                            <p class="adventure__card-text">絶景を眺めながらの空中散歩</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventure__card">
+                    <div class="adventure__card-image">
+                        <img src="images/3_nighter.png" alt="ナイトスキー" loading="lazy">
+                        <div class="adventure__card-overlay">
+                            <h3 class="adventure__card-title">ナイトスキー</h3>
+                            <p class="adventure__card-text">幻想的な夜のゲレンデ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventure__card">
+                    <div class="adventure__card-image">
+                        <img src="images/4_after.png" alt="アフタースキー" loading="lazy">
+                        <div class="adventure__card-overlay">
+                            <h3 class="adventure__card-title">アフタースキー</h3>
+                            <p class="adventure__card-text">温泉と美味しい食事で締めくくり</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コミュニティセクション -->
+    <section class="community" id="community">
+        <div class="community__container">
+            <div class="community__content">
+                <div class="community__text">
+                    <h2 class="community__title">リフト仲間との出会い</h2>
+                    <p class="community__description">
+                        Lift Togetherは、リフトの空席をなくすための“その場の相乗り”を広げる啓発サイトです。<br>
+                        シンプルなマナーと声かけで、ゲレンデ全体の流れをスムーズに。<br>
+                        初心者もエキスパートも、気持ちよく満席乗車を実践しよう。
+                    </p>
+                    <div class="community__features">
+                        <div class="community__feature">
+                            <div class="community__feature-icon">🎿</div>
+                            <div class="community__feature-text">
+                                <h3>スキル関係なし</h3>
+                                <p>初心者も上級者も一緒にリフトに乗れる</p>
+                            </div>
+                        </div>
+                        <div class="community__feature">
+                            <div class="community__feature-icon">🤝</div>
+                            <div class="community__feature-text">
+                                <h3>新たな交流</h3>
+                                <p>相乗りで生まれる短い会話と笑顔</p>
+                            </div>
+                        </div>
+                        <div class="community__feature">
+                            <div class="community__feature-icon">⏱️</div>
+                            <div class="community__feature-text">
+                                <h3>効率的な運用</h3>
+                                <p>空席をなくして待ち時間を短縮</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="community__images">
+                    <div class="community__image-grid">
+                        <img src="images/group-photo-1.jpg" alt="グループ写真1" class="community__image" loading="lazy">
+                        <img src="images/group-photo-2.jpg" alt="グループ写真2" class="community__image" loading="lazy">
+                        <img src="images/group-photo-3.jpg" alt="グループ写真3" class="community__image" loading="lazy">
+                        <img src="images/group-photo-4.jpg" alt="グループ写真4" class="community__image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 体験談セクション -->
+    <section class="experience" id="experience">
+        <div class="experience__container">
+            <h2 class="experience__title">みんなの体験談</h2>
+            <div class="experience__slider">
+                <div class="experience__slide">
+                    <div class="experience__card">
+                        <div class="experience__avatar">
+                            <img src="images/avatar-1.jpg" alt="田中さん">
+                        </div>
+                        <div class="experience__content">
+                            <h3 class="experience__name">田中 雄太さん (28)</h3>
+                            <p class="experience__text">
+                                「一人でスキーに行くのは寂しかったけど、Lift Togetherでリフト仲間を見つけてからスキーがもっと楽しくなりました！リフトの空席をなくして、みんなでスムーズに雪山を楽しめるのが最高です。」
+                            </p>
+                            <div class="experience__rating">
+                                <span class="experience__stars">⭐⭐⭐⭐⭐</span>
+                                <span class="experience__location">白馬八方尾根</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience__slide">
+                    <div class="experience__card">
+                        <div class="experience__avatar">
+                            <img src="images/avatar-2.jpg" alt="佐藤さん">
+                        </div>
+                        <div class="experience__content">
+                            <h3 class="experience__name">佐藤 美咲さん (24)</h3>
+                            <p class="experience__text">
+                                「スノーボード初心者でしたが、経験者の方とリフトに一緒に乗って教えてもらいながら上達できました。リフトで新しい出会いがあるのも嬉しいです！」
+                            </p>
+                            <div class="experience__rating">
+                                <span class="experience__stars">⭐⭐⭐⭐⭐</span>
+                                <span class="experience__location">苗場スキー場</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience__slide">
+                    <div class="experience__card">
+                        <div class="experience__avatar">
+                            <img src="images/avatar-3.jpg" alt="山田さん">
+                        </div>
+                        <div class="experience__content">
+                            <h3 class="experience__name">山田 健一さん (35)</h3>
+                            <p class="experience__text">
+                                「家族でスキーに行く時も、他の家族と一緒にリフトに乗ることで子供たちも楽しそう。大人も子供も新しい出会いがあってスキー旅行がより充実しています。」
+                            </p>
+                            <div class="experience__rating">
+                                <span class="experience__stars">⭐⭐⭐⭐⭐</span>
+                                <span class="experience__location">志賀高原</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参加方法セクション -->
+    <section class="join" id="join">
+        <div class="join__container">
+            <div class="join__content">
+                <h2 class="join__title">参加は簡単3ステップ</h2>
+                <div class="join__steps">
+                    <div class="join__step">
+                        <div class="join__step-number">1</div>
+                        <div class="join__step-content">
+                            <h3 class="join__step-title">宣言する</h3>
+                            <p class="join__step-text">ステッカーやSNSのプロフィールで相乗り推進派を表明しよう。</p>
+                        </div>
+                        <div class="join__step-image">
+                            <img src="images/illustrations/step-1-declare.svg" alt="宣言する" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="join__step">
+                        <div class="join__step-number">2</div>
+                        <div class="join__step-content">
+                            <h3 class="join__step-title">声をかける</h3>
+                            <p class="join__step-text">待機列で「ご一緒いいですか？」と一声。手で合図して座席を詰めよう。</p>
+                        </div>
+                        <div class="join__step-image">
+                            <img src="images/illustrations/step-2-ask.svg" alt="声をかける" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="join__step">
+                        <div class="join__step-number">3</div>
+                        <div class="join__step-content">
+                            <h3 class="join__step-title">乗る・広める</h3>
+                            <p class="join__step-text">満席で乗って、体験をシェア。ハッシュタグで広げて次につなげよう。</p>
+                        </div>
+                        <div class="join__step-image">
+                            <img src="images/illustrations/step-3-ride-share.svg" alt="乗る・広める" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="join__cta">
+                    <button class="join__button">今すぐ始める</button>
+                    <p class="join__note">登録は無料です</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ステッカー案内 -->
+    <section class="sticker" id="sticker">
+        <div class="sticker__container">
+            <h2 class="sticker__title">ステッカーで宣言しよう</h2>
+            <p class="sticker__description">「相乗り推進派」であることを可視化。ゴンドラ入口や板ケース、ヘルメットなどに。</p>
+            <div class="sticker__actions">
+                <a class="sticker__button" href="images/stickers/lift-together-sticker.svg" download>ステッカーデータをダウンロード（SVG）</a>
+                <p class="sticker__note">印刷はA5/A6推奨。耐候ステッカー用にご利用ください。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">よくある質問</h2>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <h3 class="faq__question">相乗りのマナーは？</h3>
+                    <p class="faq__answer">待機列で一声かける、手で合図、乗り場では係員の指示に従う。無理に詰めず安全第一で。</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">2人乗り・4人乗りの時の声かけは？</h3>
+                    <p class="faq__answer">「ご一緒いいですか？」「左（右）に詰めますね」など、短く明るい言い回しがおすすめです。</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">安全面の配慮は？</h3>
+                    <p class="faq__answer">速度の速いリフトや初心者がいる場合は無理をせず、足場確認と荷物の取り回しに注意しましょう。</p>
                 </div>
             </div>
         </div>
@@ -155,11 +347,11 @@
     <!-- SNSシェア -->
     <section class="share">
         <div class="share__container">
-            <h2 class="share__title">Lift Togetherを広めよう！</h2>
-            <p class="share__description">友達にもシェアして、一緒にお得にスキーを楽しみませんか？</p>
+            <h2 class="share__title">相乗り文化を広げよう！</h2>
+            <p class="share__description">ハッシュタグをつけて体験を発信。満席乗車を当たり前に。</p>
             <div class="share__buttons">
-                <a href="https://twitter.com/intent/tweet?text=Lift%20Together%20-%20%E3%83%AA%E3%83%95%E3%83%88%E7%9B%B8%E4%B9%97%E3%82%8A%E6%8E%A8%E9%80%B2%E3%82%B5%E3%82%A4%E3%83%88&url=https://yousan.github.io/lift-together&hashtags=LiftTogether,スキー,相乗り,ウィンタースポーツ" 
-                   target="_blank" 
+                <a href="https://twitter.com/intent/tweet?text=Lift%20Together%20-%20%E3%83%AA%E3%83%95%E3%83%88%E7%9B%B8%E4%B9%97%E3%82%8A%E3%81%A7%E5%BE%85%E3%81%A1%E6%99%82%E9%96%93%E7%9F%AD%E7%B8%AE&url=https://yousan.github.io/lift-together&hashtags=LiftTogether,リフト相乗り,待ち時間短縮,スキー,スノーボード" 
+                   target="_blank" rel="noopener noreferrer"
                    class="share__button share__button--twitter">
                     <img src="images/icon-twitter.svg" alt="Twitter">
                     Twitterでシェア
@@ -171,31 +363,8 @@
             </div>
             <div class="share__hashtags">
                 <p class="share__hashtags-title">推奨ハッシュタグ:</p>
-                <p class="share__hashtags-text">#LiftTogether #スキー #相乗り #ウィンタースポーツ #環境保護 #コスト削減</p>
+                <p class="share__hashtags-text">#LiftTogether #リフト相乗り #待ち時間短縮 #スキー #スノーボード</p>
             </div>
-        </div>
-    </section>
-
-    <!-- お問い合わせ -->
-    <section class="contact" id="contact">
-        <div class="contact__container">
-            <h2 class="contact__title">お問い合わせ</h2>
-            <p class="contact__description">ご質問やご要望がございましたら、お気軽にお問い合わせください。</p>
-            <form class="contact__form">
-                <div class="contact__form-group">
-                    <label for="name" class="contact__label">お名前</label>
-                    <input type="text" id="name" name="name" class="contact__input" required>
-                </div>
-                <div class="contact__form-group">
-                    <label for="email" class="contact__label">メールアドレス</label>
-                    <input type="email" id="email" name="email" class="contact__input" required>
-                </div>
-                <div class="contact__form-group">
-                    <label for="message" class="contact__label">メッセージ</label>
-                    <textarea id="message" name="message" class="contact__textarea" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="contact__submit">送信する</button>
-            </form>
         </div>
     </section>
 
@@ -205,14 +374,17 @@
             <div class="footer__content">
                 <div class="footer__logo">
                     <img src="images/logo.svg" alt="Lift Together" class="footer__logo-image">
-                    <p class="footer__tagline">一緒にリフトに乗ろう</p>
+                    <p class="footer__tagline">その一声で、待ち時間を短く。</p>
                 </div>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a href="#about" class="footer__nav-link">サービスについて</a></li>
-                        <li class="footer__nav-item"><a href="#how-it-works" class="footer__nav-link">使い方</a></li>
-                        <li class="footer__nav-item"><a href="#benefits" class="footer__nav-link">メリット</a></li>
-                        <li class="footer__nav-item"><a href="#contact" class="footer__nav-link">お問い合わせ</a></li>
+                        <li class="footer__nav-item"><a href="#benefits" class="footer__nav-link">ベネフィット</a></li>
+                        <li class="footer__nav-item"><a href="#adventure" class="footer__nav-link">アドベンチャー</a></li>
+                        <li class="footer__nav-item"><a href="#community" class="footer__nav-link">コミュニティ</a></li>
+                        <li class="footer__nav-item"><a href="#experience" class="footer__nav-link">体験談</a></li>
+                        <li class="footer__nav-item"><a href="#join" class="footer__nav-link">参加する</a></li>
+                        <li class="footer__nav-item"><a href="#sticker" class="footer__nav-link">ステッカー</a></li>
+                        <li class="footer__nav-item"><a href="#faq" class="footer__nav-link">FAQ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -221,6 +393,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- モバイル固定CTA -->
+    <div class="mobile-cta">
+        <button class="mobile-cta__button" data-target="#join">参加する</button>
+        <button class="mobile-cta__button" data-target="#faq">マナーを見る</button>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

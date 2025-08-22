@@ -1,7 +1,7 @@
 {
   "name": "lift-together",
   "version": "1.0.0",
-  "description": "リフト相乗り推進サイト - スキー場への移動とリフト券をシェアするプラットフォーム",
+  "description": "リフト相乗り啓発サイト - リフトの待ち時間を短縮する満席乗車の文化づくり",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:css && npm run build:html && npm run build:js && npm run build:images",
@@ -9,9 +9,11 @@
     "build:html": "cp src/*.html dist/",
     "build:js": "cp -r src/js dist/",
     "build:images": "cp -r src/images dist/",
-    "watch": "npm run watch:css & npm run watch:html",
+    "watch": "npm run watch:css & npm run watch:html & npm run watch:js & npm run watch:images",
     "watch:css": "sass --watch src/scss/main.scss:dist/css/style.css",
     "watch:html": "chokidar 'src/*.html' -c 'npm run build:html'",
+    "watch:js": "chokidar 'src/js/**' -c 'npm run build:js'",
+    "watch:images": "chokidar 'src/images/**' -c 'npm run build:images'",
     "serve": "live-server dist --port=3000",
     "dev": "npm run build && npm run watch & npm run serve",
     "deploy": "npm run build && gh-pages -d dist",
@@ -20,9 +22,10 @@
   "keywords": [
     "ski",
     "snowboard",
-    "carpool",
-    "lift-ticket",
-    "sharing",
+    "lift-sharing",
+    "wait-time",
+    "queue",
+    "manner",
     "winter-sports",
     "japan"
   ],

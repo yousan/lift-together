@@ -1,0 +1,12 @@
+<!-- リフトライドの画像プレースホルダー -->
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682b4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#skyGradient)"/>
+  <text x="200" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white" font-weight="bold">リフトライド</text>
+  <text x="200" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Lift Ride</text>
+</svg> 

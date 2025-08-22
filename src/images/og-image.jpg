@@ -1,1 +1,17 @@
- 
+<!-- OGP Image Placeholder (1200x630) -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="url(#ogGradient)"/>
+  <circle cx="600" cy="315" r="100" fill="white" opacity="0.1"/>
+  <path d="M500 215L600 115L700 215H500Z" fill="white" opacity="0.9"/>
+  <path d="M550 265L600 165L650 265H550Z" fill="white"/>
+  <circle cx="600" cy="135" r="15" fill="white"/>
+  <text x="600" y="400" text-anchor="middle" font-size="48" font-weight="bold" fill="white">Lift Together</text>
+  <text x="600" y="450" text-anchor="middle" font-size="24" fill="white" opacity="0.9">リフト相乗り推進サイト</text>
+  <text x="600" y="500" text-anchor="middle" font-size="20" fill="white" opacity="0.8">スキー場への移動とリフト券をシェアしよう</text>
+  <defs>
+    <linearGradient id="ogGradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+</svg> 

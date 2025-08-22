@@ -1,0 +1,5 @@
+<!-- グループ写真4のプレースホルダー -->
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#48bb78"/>
+  <text x="150" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">最高の体験</text>
+</svg> 

@@ -1,1 +1,16 @@
- 
+<!-- This is a placeholder. In a real project, you would use an actual JPG image -->
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="url(#heroGradient)"/>
+  <path d="M0 300L50 280L100 290L150 270L200 280L250 260L300 270L350 250L400 260L450 240L500 250L550 230L600 240V400H0V300Z" fill="white" opacity="0.1"/>
+  <path d="M100 200L150 180L200 190L250 170L300 180L350 160L400 170L450 150L500 160V400H100V200Z" fill="white" opacity="0.2"/>
+  <circle cx="150" cy="100" r="30" fill="white" opacity="0.3"/>
+  <circle cx="450" cy="80" r="20" fill="white" opacity="0.4"/>
+  <text x="300" y="200" text-anchor="middle" font-size="24" fill="white" opacity="0.8">スキー場の美しい風景</text>
+  <text x="300" y="230" text-anchor="middle" font-size="16" fill="white" opacity="0.6">Hero Image Placeholder</text>
+  <defs>
+    <linearGradient id="heroGradient" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+</svg> 
