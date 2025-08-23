@@ -498,6 +498,57 @@ img {
   }
 }
 
+// ===== ベネフィットセクション =====
+.benefits {
+  @include section-padding;
+  background: linear-gradient(180deg, #e6f6fb 0%, #f8fbff 100%);
+
+  &__container {
+    @include container;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-2xl;
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
+  }
+
+  &__item {
+    background: white;
+    border-radius: 20px;
+    padding: $spacing-xl;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid $border-color;
+  }
+
+  &__icon {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto $spacing-md;
+    display: block;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    font-weight: 800;
+    margin-bottom: $spacing-sm;
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__text {
+    color: $text-light;
+  }
+}
+
 // ===== アドベンチャーセクション =====
 .adventure {
   @include section-padding;
